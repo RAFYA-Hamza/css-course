@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* box-sizing: border-box; => width:400px; => 400px-2px*2-24px*2=348px
+  in this case the border and padding values includes in the calculation */
+
+  /* box-sizing: content-box; => width:400px; for the content
+  in this case the border and padding values not includes in the calculation */
+}
+
+/* h1 {
+  border: 2px dashed red;
+  width: 400px;
+  font-size: 3rem;
+  padding: 0.5em;
+} */
+
+.container {
+  border: 10px double red;
+  /* border-top: 10px dotted green;
+  border-top-color: blue; */
+  font-size: 1.5rem;
+  margin: 1.5em;
+  padding: 1.5em;
+
+  outline: 5px solid purple;
+  outline-offset: 5px;
+}
+
+.circle {
+  margin: 3rem auto;
+  background-color: gold;
+
+  height: 100px;
+  width: 100px;
+
+  border: 2px solid #000;
+  border-radius: 50%;
+  outline: 2px solid red;
+  outline-offset: 0.25rem;
+  cursor: pointer;
+}

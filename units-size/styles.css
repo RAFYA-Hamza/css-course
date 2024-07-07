@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  border: 2px dashed red;
+  width: 50%;
+  font-size: 3rem;
+  padding: 0.5em;
+}
+
+main {
+  width: 50vw;
+  background-color: aqua;
+  font-size: 2rem;
+}
+
+p {
+  /* rem: root element, that signify if our browser specify a font size to be 16px 
+        by default, in this case 1rem = 16px. it is relative the browser not to the parent. */
+
+  font-size: 2rem;
+  width: 40ch;
+}
