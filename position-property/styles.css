@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  min-height: 200vh;
+}
+
+.outer-container {
+  border: 3px dashed #000;
+  width: 75vw;
+  height: 85vh;
+  margin: 40px auto;
+  position: relative;
+}
+
+.inner-container {
+  border: 2px solid #00f;
+  width: 40vw;
+  height: 50vh;
+  margin: 200px auto;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  color: white;
+  padding: 1rem;
+}
+/* When we choose the position of absolute, we need to specify the parent to be in the relative position */
+.absolute {
+  background-color: blue;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+/* For the relative position, it will be in the relative position of their perent */
+.relative {
+  background-color: red;
+  position: relative;
+  top: 100px;
+  left: 80px;
+}
+/* For the fixed position, it fixe the element with page not the parenet and even if we scroll to the buttom it still fixed */
+.fixed {
+  background-color: #333;
+  position: fixed;
+  top: 100px;
+}
+/* for the sticky position, it take the element fixed inside the parent */
+.sticky {
+  background-color: lightcoral;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+/* Remember, how to make things disappear! */
+/* -------------------------------------------------------------------------------------- */
+section {
+  height: 100vh;
+}
+
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+
+header,
+footer {
+  color: white;
+  text-align: center;
+  height: 100px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  font-size: 5rem;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  background-color: #000;
+  font-size: 3rem;
+}
+
+a:visited {
+  color: white;
+}
+
+.social {
+  background-color: royalblue;
+  color: #fff;
+  font-size: inherit;
+  padding: 1rem;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 1;
+}

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid black;
+  display: flex;
+  gap: 1rem; /*make the margin between content*/
+  justify-content: center; /*make space selon axis x*/
+  align-items: center; /*make space selon axis y*/
+  flex-direction: row; /*make the content to be in row or column*/
+  flex-wrap: nowrap; /*to make items not overfowing*/
+  /* align-content: center; the same with align items, but when we resize screen we see the different */
+  /* flex-flow: row wrap; */
+}
+
+.box {
+  /* min-width: 100px; */
+  height: 100px;
+  background-color: #000;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1 1 150px; /*select nowrap*/
+}
+
+.box:nth-child(2) {
+  flex: 2 2 150px;
+}
